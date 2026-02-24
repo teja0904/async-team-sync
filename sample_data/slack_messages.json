@@ -1,0 +1,367 @@
+[
+  {
+    "channel": "#engineering",
+    "date": "2025-02-17",
+    "messages": [
+      {
+        "user": "Alex Chen",
+        "timestamp": "2025-02-17T09:15:00Z",
+        "text": "Wrapped up the API rate-limiter PR — tests are green, ready for review. Moving on to the caching layer next."
+      },
+      {
+        "user": "Priya Sharma",
+        "timestamp": "2025-02-17T09:32:00Z",
+        "text": "Blocked on the search indexing task — waiting on the new Elasticsearch cluster to be provisioned. @ops any ETA?"
+      },
+      {
+        "user": "Marcus Johnson",
+        "timestamp": "2025-02-17T10:05:00Z",
+        "text": "Decision: We're going with Redis for session caching instead of Memcached. Better persistence options and we already have the infrastructure."
+      },
+      {
+        "user": "Sofia Rodriguez",
+        "timestamp": "2025-02-17T11:20:00Z",
+        "text": "Shipped the onboarding email flow to staging. Need someone to QA the templates before we push to prod."
+      },
+      {
+        "user": "Alex Chen",
+        "timestamp": "2025-02-17T14:00:00Z",
+        "text": "Quick update: caching layer is trickier than expected. Found some edge cases with TTL invalidation. Might need an extra day."
+      }
+    ]
+  },
+  {
+    "channel": "#engineering",
+    "date": "2025-02-18",
+    "messages": [
+      {
+        "user": "Marcus Johnson",
+        "timestamp": "2025-02-18T08:45:00Z",
+        "text": "Redis caching PR is up. Also started looking into the webhook retry logic — current implementation drops events silently."
+      },
+      {
+        "user": "Priya Sharma",
+        "timestamp": "2025-02-18T09:10:00Z",
+        "text": "Elasticsearch cluster is live! Unblocked on search indexing. Starting the migration script today."
+      },
+      {
+        "user": "Sofia Rodriguez",
+        "timestamp": "2025-02-18T10:30:00Z",
+        "text": "Onboarding emails QA'd and approved. Pushing to production this afternoon."
+      },
+      {
+        "user": "Alex Chen",
+        "timestamp": "2025-02-18T11:00:00Z",
+        "text": "Resolved the TTL edge cases. Caching layer is working well now — 40% reduction in DB read latency in staging."
+      },
+      {
+        "user": "Marcus Johnson",
+        "timestamp": "2025-02-18T15:00:00Z",
+        "text": "Decision: Adding exponential backoff to webhook retries with a dead letter queue for failed events. Will document the approach in Notion."
+      }
+    ]
+  },
+  {
+    "channel": "#product",
+    "date": "2025-02-17",
+    "messages": [
+      {
+        "user": "Jamie Lee",
+        "timestamp": "2025-02-17T09:00:00Z",
+        "text": "Finished the user research synthesis for the dashboard redesign. Key insight: users want fewer clicks to reach their top metrics."
+      },
+      {
+        "user": "Dana Kim",
+        "timestamp": "2025-02-17T10:15:00Z",
+        "text": "Working on the Q1 roadmap draft. Need input from eng on feasibility for the analytics overhaul — can we scope a spike?"
+      },
+      {
+        "user": "Riley Torres",
+        "timestamp": "2025-02-17T11:45:00Z",
+        "text": "Blocked: The A/B test for the new pricing page can't launch until legal reviews the updated terms. Following up today."
+      },
+      {
+        "user": "Jamie Lee",
+        "timestamp": "2025-02-17T14:30:00Z",
+        "text": "Decision: Dashboard redesign will be phased. Phase 1 focuses on the metrics overview; Phase 2 adds customizable widgets."
+      }
+    ]
+  },
+  {
+    "channel": "#product",
+    "date": "2025-02-18",
+    "messages": [
+      {
+        "user": "Dana Kim",
+        "timestamp": "2025-02-18T09:30:00Z",
+        "text": "Q1 roadmap draft shared in Notion. Requesting async feedback by end of week."
+      },
+      {
+        "user": "Riley Torres",
+        "timestamp": "2025-02-18T10:00:00Z",
+        "text": "Legal approved the pricing page terms! A/B test is unblocked — launching tomorrow."
+      },
+      {
+        "user": "Jamie Lee",
+        "timestamp": "2025-02-18T13:00:00Z",
+        "text": "Phase 1 wireframes for dashboard redesign are in Figma. Would love eyes on them during this week's design review."
+      }
+    ]
+  },
+  {
+    "channel": "#operations",
+    "date": "2025-02-17",
+    "messages": [
+      {
+        "user": "Jordan Blake",
+        "timestamp": "2025-02-17T08:30:00Z",
+        "text": "Completed the vendor renewal analysis for Q1. Three contracts up — recommending we consolidate from two monitoring tools to one."
+      },
+      {
+        "user": "Casey Nguyen",
+        "timestamp": "2025-02-17T09:45:00Z",
+        "text": "Onboarding automation for new hires is 80% done. Slack channel creation and Google Workspace provisioning are automated. Still need to add Notion access."
+      },
+      {
+        "user": "Jordan Blake",
+        "timestamp": "2025-02-17T11:30:00Z",
+        "text": "Decision: Cancelling the DataDog contract in favor of Grafana Cloud. Saves $1,200/month and the team prefers the dashboards."
+      },
+      {
+        "user": "Casey Nguyen",
+        "timestamp": "2025-02-17T15:00:00Z",
+        "text": "Blocked on Notion API access for the onboarding flow — need admin approval to create an integration token."
+      }
+    ]
+  },
+  {
+    "channel": "#operations",
+    "date": "2025-02-18",
+    "messages": [
+      {
+        "user": "Casey Nguyen",
+        "timestamp": "2025-02-18T09:00:00Z",
+        "text": "Got Notion admin access. Onboarding automation is fully working now — tested with a dummy account end-to-end."
+      },
+      {
+        "user": "Jordan Blake",
+        "timestamp": "2025-02-18T10:30:00Z",
+        "text": "DataDog migration plan documented. Grafana Cloud setup starts next week. Current dashboards will be recreated by Friday."
+      },
+      {
+        "user": "Casey Nguyen",
+        "timestamp": "2025-02-18T14:00:00Z",
+        "text": "Shipped the deprovisioning workflow too — when someone's last day is marked in BambooHR, it triggers access revocation across all tools within 24 hours."
+      }
+    ]
+  },
+  {
+    "channel": "#engineering",
+    "date": "2025-02-19",
+    "messages": [
+      {
+        "user": "Priya Sharma",
+        "timestamp": "2025-02-19T09:00:00Z",
+        "text": "Search indexing migration is 60% complete. Processing about 2M records — should finish by tomorrow morning."
+      },
+      {
+        "user": "Alex Chen",
+        "timestamp": "2025-02-19T09:30:00Z",
+        "text": "Caching layer merged to main. Starting on the API versioning task now."
+      },
+      {
+        "user": "Sofia Rodriguez",
+        "timestamp": "2025-02-19T10:15:00Z",
+        "text": "Onboarding emails are live in production! Monitoring delivery rates — 98.5% so far."
+      },
+      {
+        "user": "Marcus Johnson",
+        "timestamp": "2025-02-19T11:00:00Z",
+        "text": "Webhook retry system is in review. Dead letter queue is tested and working. Need Alex to review the backoff logic."
+      },
+      {
+        "user": "Priya Sharma",
+        "timestamp": "2025-02-19T16:00:00Z",
+        "text": "Blocked: Hit a memory issue with the bulk indexing job. Need to batch the records — working on a fix."
+      }
+    ]
+  },
+  {
+    "channel": "#product",
+    "date": "2025-02-19",
+    "messages": [
+      {
+        "user": "Riley Torres",
+        "timestamp": "2025-02-19T09:15:00Z",
+        "text": "Pricing page A/B test is live! Control vs. simplified layout. Running for 2 weeks, targeting 5k visitors per variant."
+      },
+      {
+        "user": "Dana Kim",
+        "timestamp": "2025-02-19T10:00:00Z",
+        "text": "Got good async feedback on the roadmap. Incorporating suggestions and will finalize by Friday."
+      },
+      {
+        "user": "Jamie Lee",
+        "timestamp": "2025-02-19T14:00:00Z",
+        "text": "Design review went well. Minor tweaks to the dashboard wireframes — updating Figma today."
+      }
+    ]
+  },
+  {
+    "channel": "#operations",
+    "date": "2025-02-19",
+    "messages": [
+      {
+        "user": "Jordan Blake",
+        "timestamp": "2025-02-19T09:00:00Z",
+        "text": "Q1 tool spend report is ready. Total SaaS spend: $14,200/month across 23 tools. Identified 4 tools with overlapping functionality."
+      },
+      {
+        "user": "Casey Nguyen",
+        "timestamp": "2025-02-19T11:00:00Z",
+        "text": "Wrote up the onboarding/offboarding automation docs in Notion. New hires and managers can now self-serve the checklist."
+      },
+      {
+        "user": "Jordan Blake",
+        "timestamp": "2025-02-19T15:00:00Z",
+        "text": "Decision: Scheduling a tool audit review meeting for next Wednesday. Goal is to cut 2-3 redundant subscriptions by end of Q1."
+      }
+    ]
+  },
+  {
+    "channel": "#engineering",
+    "date": "2025-02-20",
+    "messages": [
+      {
+        "user": "Priya Sharma",
+        "timestamp": "2025-02-20T09:00:00Z",
+        "text": "Fixed the memory issue — batching records in chunks of 50k. Migration resumed and looking good."
+      },
+      {
+        "user": "Alex Chen",
+        "timestamp": "2025-02-20T09:45:00Z",
+        "text": "API versioning design doc is up. Proposing URL-based versioning (v1, v2) with 6-month deprecation windows."
+      },
+      {
+        "user": "Marcus Johnson",
+        "timestamp": "2025-02-20T10:30:00Z",
+        "text": "Webhook retry PR approved and merged. Dead letter queue dashboard is live — already caught 3 events that would have been lost."
+      },
+      {
+        "user": "Sofia Rodriguez",
+        "timestamp": "2025-02-20T11:15:00Z",
+        "text": "Starting on the password reset flow redesign. Current flow has a 12% drop-off rate — aiming to cut that in half."
+      }
+    ]
+  },
+  {
+    "channel": "#product",
+    "date": "2025-02-20",
+    "messages": [
+      {
+        "user": "Dana Kim",
+        "timestamp": "2025-02-20T09:30:00Z",
+        "text": "Q1 roadmap finalized and shared company-wide. Three themes: performance, onboarding, and analytics."
+      },
+      {
+        "user": "Riley Torres",
+        "timestamp": "2025-02-20T11:00:00Z",
+        "text": "Early pricing test data: simplified layout showing 8% higher click-through to signup. Still early but promising."
+      },
+      {
+        "user": "Jamie Lee",
+        "timestamp": "2025-02-20T14:30:00Z",
+        "text": "Dashboard wireframes finalized. Handing off to eng for Phase 1 implementation estimate."
+      }
+    ]
+  },
+  {
+    "channel": "#operations",
+    "date": "2025-02-20",
+    "messages": [
+      {
+        "user": "Casey Nguyen",
+        "timestamp": "2025-02-20T09:00:00Z",
+        "text": "Two new hires starting Monday — onboarding automation triggered successfully for both. All accounts provisioned."
+      },
+      {
+        "user": "Jordan Blake",
+        "timestamp": "2025-02-20T10:30:00Z",
+        "text": "Grafana Cloud setup is complete. Migrated 8 of 12 DataDog dashboards. Remaining 4 by tomorrow."
+      },
+      {
+        "user": "Casey Nguyen",
+        "timestamp": "2025-02-20T14:00:00Z",
+        "text": "Decision: Standardizing all internal docs on Notion. Moving remaining Google Docs and Confluence pages over the next 2 weeks."
+      }
+    ]
+  },
+  {
+    "channel": "#engineering",
+    "date": "2025-02-21",
+    "messages": [
+      {
+        "user": "Priya Sharma",
+        "timestamp": "2025-02-21T09:00:00Z",
+        "text": "Search indexing migration complete! All 2.1M records indexed. Query latency dropped from 800ms to 120ms."
+      },
+      {
+        "user": "Alex Chen",
+        "timestamp": "2025-02-21T10:00:00Z",
+        "text": "API versioning implementation started. V2 endpoints will coexist with V1 — no breaking changes for existing clients."
+      },
+      {
+        "user": "Marcus Johnson",
+        "timestamp": "2025-02-21T11:00:00Z",
+        "text": "Starting on the notification service refactor. Current system sends duplicate notifications — fixing the deduplication logic."
+      },
+      {
+        "user": "Sofia Rodriguez",
+        "timestamp": "2025-02-21T14:00:00Z",
+        "text": "Password reset redesign is in review. Reduced steps from 4 to 2. Added magic link option as an alternative."
+      }
+    ]
+  },
+  {
+    "channel": "#product",
+    "date": "2025-02-21",
+    "messages": [
+      {
+        "user": "Jamie Lee",
+        "timestamp": "2025-02-21T09:30:00Z",
+        "text": "Eng estimated Phase 1 dashboard at 3 weeks. We're good to slot it into Sprint 7."
+      },
+      {
+        "user": "Riley Torres",
+        "timestamp": "2025-02-21T11:00:00Z",
+        "text": "Pricing A/B test at day 3: simplified layout at 9.2% CTR vs. 7.8% control. Statistical significance at 82% — need more data."
+      },
+      {
+        "user": "Dana Kim",
+        "timestamp": "2025-02-21T15:00:00Z",
+        "text": "Kicking off the analytics overhaul spike next week. Alex and Priya will lead the technical assessment."
+      }
+    ]
+  },
+  {
+    "channel": "#operations",
+    "date": "2025-02-21",
+    "messages": [
+      {
+        "user": "Jordan Blake",
+        "timestamp": "2025-02-21T09:00:00Z",
+        "text": "All DataDog dashboards migrated to Grafana Cloud. DataDog cancellation submitted — effective end of month."
+      },
+      {
+        "user": "Casey Nguyen",
+        "timestamp": "2025-02-21T10:30:00Z",
+        "text": "Started the Confluence-to-Notion migration. 45 pages identified — prioritizing active project docs first."
+      },
+      {
+        "user": "Jordan Blake",
+        "timestamp": "2025-02-21T14:00:00Z",
+        "text": "Weekly ops summary: 2 new hires onboarded, DataDog sunset complete, tool audit meeting scheduled. Team is in good shape going into next week."
+      }
+    ]
+  }
+]

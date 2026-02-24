@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Alex Chen",
+    "role": "Senior Backend Engineer",
+    "team": "Engineering",
+    "timezone": "America/Los_Angeles",
+    "channels": ["#engineering"]
+  },
+  {
+    "name": "Priya Sharma",
+    "role": "Backend Engineer",
+    "team": "Engineering",
+    "timezone": "Asia/Kolkata",
+    "channels": ["#engineering"]
+  },
+  {
+    "name": "Marcus Johnson",
+    "role": "Staff Engineer",
+    "team": "Engineering",
+    "timezone": "America/New_York",
+    "channels": ["#engineering"]
+  },
+  {
+    "name": "Sofia Rodriguez",
+    "role": "Frontend Engineer",
+    "team": "Engineering",
+    "timezone": "Europe/Madrid",
+    "channels": ["#engineering"]
+  },
+  {
+    "name": "Jamie Lee",
+    "role": "Product Designer",
+    "team": "Product",
+    "timezone": "America/Chicago",
+    "channels": ["#product"]
+  },
+  {
+    "name": "Dana Kim",
+    "role": "Product Manager",
+    "team": "Product",
+    "timezone": "Asia/Tokyo",
+    "channels": ["#product"]
+  },
+  {
+    "name": "Riley Torres",
+    "role": "Growth PM",
+    "team": "Product",
+    "timezone": "America/Denver",
+    "channels": ["#product"]
+  },
+  {
+    "name": "Jordan Blake",
+    "role": "Operations Lead",
+    "team": "Operations",
+    "timezone": "Europe/London",
+    "channels": ["#operations"]
+  },
+  {
+    "name": "Casey Nguyen",
+    "role": "IT & Systems Specialist",
+    "team": "Operations",
+    "timezone": "Australia/Sydney",
+    "channels": ["#operations"]
+  }
+]
